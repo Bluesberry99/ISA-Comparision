@@ -1,0 +1,38 @@
+[mengying@royal-26] (1)$ ./build/RISCV/gem5.opt project/RISCV_config.py crypto_analysis_riscv_new --cpu o3
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.0.0.1
+gem5 compiled Nov 22 2024 16:59:10
+gem5 started Dec  8 2024 12:43:49
+gem5 executing on royal-26, pid 1134592
+command line: ./build/RISCV/gem5.opt project/RISCV_config.py crypto_analysis_riscv_new --cpu o3
+
+Binary path: crypto_analysis_riscv_new
+Command to execute: ['crypto_analysis_riscv_new']
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/arch/riscv/isa.cc:276: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/arch/riscv/linux/se_workload.cc:60: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+Beginning simulation!
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+Serial Data Collection Time: 2727.67 ms
+
+Benchmarking Compute Returns:
+ - Serial Compute Time: 24.647 ms
+Data successfully saved to processed_data.csv.
+Details about the collected data:
+ - Total data points: 43555
+ - Average price: $17234.94
+ - Maximum price: $21469.00
+ - Minimum price: $15500.00
+
+Benchmarking Data Analysis (ACF Computation):
+ - Serial ACF Compute Time: 594.51 ms
+
+Benchmarking GARCH Model:
+ - Serial GARCH Calculation Time: 11.05 ms
+Exiting @ tick 6476145512500 because exiting with last active thread context
