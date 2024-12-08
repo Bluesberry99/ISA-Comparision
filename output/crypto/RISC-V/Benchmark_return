@@ -1,0 +1,15 @@
+Benchmarking Compute Returns:
+ - Serial Compute Time: 3.82655 ms
+Data successfully saved to processed_data.csv.
+Details about the collected data:
+ - Total data points: 43555
+ - Average price: $17234.94
+ - Maximum price: $21469.00
+ - Minimum price: $15500.00
+
+Benchmarking Data Analysis (ACF Computation):
+ - Serial ACF Compute Time: 31.92 ms
+
+Benchmarking GARCH Model:
+ - Serial GARCH Calculation Time: 0.72 ms
+Exiting @ tick 1737994892067 because exiting with last active thread context
